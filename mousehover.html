@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Mousemove Effects</title>
+      <link rel="stylesheet" href="mousehover.css">
+   </head>
+   <body>
+      <section class="banner"></section>
+      <div class="content">
+      <h2>CSS Clip-path Mousemove Effects</h2>
+      <p>
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
+         explicabo at velit, consequuntur fugiat animi adipisci voluptas
+         reiciendis, a consequatur repudiandae nostrum tenetur numquam ipsa
+         facere pariatur ad natus unde ex ratione! Et itaque a ducimus! Animi
+         necessitatibus inventore, at ipsa odio repellat similique dolores
+         accusamus, perferendis veritatis aliquam quae id ipsum! Praesentium
+         minus est culpa iste perferendis vero eligendi aspernatur inventore
+         accusamus. Quidem, doloremque quisquam. Totam repudiandae asperiores et.
+      </p>
+      <script type="text/javascript">
+         var pos = document.documentElement;
+         pos.addEventListener("mousemove", e => {
+            pos.style.setProperty('--x', e.clientX + "px");
+            pos.style.setProperty('--y', e.clientY + "px");
+         })
+      </script>
+      </div>
+   </body>
+</html>
